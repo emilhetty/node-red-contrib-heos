@@ -50,7 +50,7 @@ module.exports = function(RED) {
 
             if(config.attributesFromPayload && msg.payload.attributes) {
 
-                attributes = JSON.parse(msg.payload.attributes);
+                attributes = msg.payload.attributes;
             }
 
             if(node.deviceAutodiscover == "autodiscover") {
